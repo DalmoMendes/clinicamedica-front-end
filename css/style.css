@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: linear-gradient(to bottom, #0fcb57, #47d772, #69e38c, #86eea5, #a2f9bd);
+}
+.contaner{
+  padding-top: 30px;
+  margin: auto;
+  width: 90%;
+}
+/* Style the header */
+header {
+  background-color: rgb(103, 231, 118);
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.subtitulo{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+}
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: rgb(103, 231, 118);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul h2 {
+  margin: 20px;
+}
+nav ul li {
+  margin: 20px;
+}
+/* Style the content */
+article {
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+  background-color: rgb(103, 231, 118);
+  padding: 10px;
+}
+article div {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+}
+.video{
+  text-align: center;
+  width: 100%;
+}
+.imagens{
+  width: 100%;
+}
+.table, th, td{
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgb(13, 221, 107);
+}
+
+/* Fomulários */
+fieldset{
+  width: 100%;
+  padding: 10px;
+}
+.input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border-color: 1px solid rgb(55, 228, 69);
+}
+
+.btn-add{
+  background-color: #0fcb57;
+  border-radius: 5px;
+  border: 0px;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-clen{
+  background-color: #cb0f0f;
+  border-radius: 5px;
+  border: 0px;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Style the footer */
+footer {
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+
+/* FORMATAÇÃO DA LISTA */
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 5px;
+}
+/* LINK E VISITAÇÃO */
+a:link,a:visited {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* HOVER DO LINK */
+a:hover {
+  color: rgb(34, 33, 33);
+  font-weight: 200;
+  border-radius: 10px;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+/* LINK SELECIONADO */
+a:active {
+  color: black;
+}
+
+/* FOOTER FLEX BOX */
+
+.footer{
+  background-color: rgb(103, 231, 118);
+  margin: auto;
+  width: 100%;
+ 
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #fff;
+}
+.footer h2{
+  text-align: center; 
+  border-bottom: 2px solid #fff;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+.footer ul a {
+  color:rgb(63, 61, 61);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer ul a:hover{
+  color: rgb(8, 8, 8);
+  font-weight: 400;
+  font-size: 20px;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+}
+.flex-container > div {
+  color: rgb(19, 18, 18) !important;
+  width: 33%;
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
