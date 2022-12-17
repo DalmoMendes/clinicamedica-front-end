@@ -1,3 +1,4 @@
+/* FORMATAÇÃO PADRÃO BÁSICA  */
 * {
   box-sizing: border-box;
 }
@@ -6,12 +7,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-image: linear-gradient(to bottom, #0fcb57, #47d772, #69e38c, #86eea5, #a2f9bd);
 }
+/* CORPO GERAL DA PÁGINA */
 .contaner{
   padding-top: 30px;
   margin: auto;
   width: 90%;
 }
-/* Style the header */
+/* CABEÇALHO - HEADER  */
 header {
   background-color: rgb(103, 231, 118);
   padding: 10px;
@@ -25,13 +27,13 @@ header {
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: 24px;
 }
-/* Container for flexboxes */
+/* CONTEINER FLEXBOX */
 section {
   display: -webkit-flex;
   display: flex;
 }
 
-/* Style the navigation menu */
+/* MENU NAV */
 nav {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -40,7 +42,7 @@ nav {
   padding: 20px;
 }
 
-/* Style the list inside the menu */
+/* MENU NAV UL */
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -51,7 +53,7 @@ nav ul h2 {
 nav ul li {
   margin: 20px;
 }
-/* Style the content */
+/* FLEXBOX BLOCO ARTICLE */
 article {
   -webkit-flex: 4;
   -ms-flex: 4;
@@ -59,19 +61,23 @@ article {
   background-color: rgb(103, 231, 118);
   padding: 10px;
 }
+/* FLEXBOX BLOCO ARTICLE COM DIVS */
 article div {
   background-color: #fff;
   border-radius: 15px;
   margin: 10px;
   padding: 10px;
 }
+/* BLOCO VÍDEO */
 .video{
   text-align: center;
   width: 100%;
 }
+/* BLOCO IMAGENS */
 .imagens{
   width: 100%;
 }
+/* BLOCO TABELA */
 .table, th, td{
   margin: auto;
   padding: 10px;
@@ -79,11 +85,13 @@ article div {
   border: 1px solid rgb(13, 221, 107);
 }
 
-/* Fomulários */
+
+/* BLOCO FORMULÁRIO FIELDSET */
 fieldset{
   width: 100%;
   padding: 10px;
 }
+/* BLOCO FORMULÁRIO INPUTS */
 .input{
   width: 100%;
   padding: 10px;
@@ -92,6 +100,7 @@ fieldset{
   border-color: 1px solid rgb(55, 228, 69);
 }
 
+/* BLOCO FORMULÁRIO BUTTON CADASTRO */
 .btn-add{
   background-color: #0fcb57;
   border-radius: 5px;
@@ -100,6 +109,7 @@ fieldset{
   color: #fff;
   cursor: pointer;
 }
+/* BLOCO FORMULÁRIO BUTTON RESET */
 .btn-clen{
   background-color: #cb0f0f;
   border-radius: 5px;
@@ -109,49 +119,10 @@ fieldset{
   cursor: pointer;
 }
 
-/* Style the footer */
+/* BLOCO FOOTER - RODAPÉ DA PÁGINA */
 footer {
   color: white;
 }
-
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-
-/* FORMATAÇÃO DA LISTA */
-ul {
-  list-style-type: none;
-  text-decoration: none;
-  margin: 5px;
-}
-/* LINK E VISITAÇÃO */
-a:link,a:visited {
-  color: black;
-  text-decoration: none;
-  display: inline-block;
-}
-
-/* HOVER DO LINK */
-a:hover {
-  color: rgb(34, 33, 33);
-  font-weight: 200;
-  border-radius: 10px;
-  transition: 1.5s;
-  cursor: pointer;
-}
-
-/* LINK SELECIONADO */
-a:active {
-  color: black;
-}
-
-/* FOOTER FLEX BOX */
-
 .footer{
   background-color: rgb(103, 231, 118);
   margin: auto;
@@ -180,7 +151,7 @@ a:active {
   transition: 1.5s;
   cursor: pointer;
 }
-
+/* BLOCO FOOTER FLEX BOX */
 .flex-container {
   display: flex;
 }
@@ -190,4 +161,38 @@ a:active {
   margin: 10px;
   padding: 10px;
   font-size: 14px;
+}
+
+/* FORMATAÇÃO DA LISTA E LINKS */
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 5px;
+}
+/* LINK E VISITAÇÃO */
+a:link,a:visited {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* HOVER DO LINK */
+a:hover {
+  color: rgb(34, 33, 33);
+  font-weight: 200;
+  border-radius: 10px;
+  transition: 1.5s;
+  cursor: pointer;
+}
+/* LINK SELECIONADO */
+a:active {
+  color: black;
+}
+
+/*  RESPONSIVE - CONTENT INSIDE HE SECTION */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 }
